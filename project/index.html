@@ -1,0 +1,550 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elena & Co. — Planificación de Bodas de Lujo</title>
+    <meta name="description" content="Somos tu equipo de planificación de bodas de lujo. Nos encargamos de cada detalle para que tú solo tengas que disfrutar." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursorFollower"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+      <div class="nav-container">
+        <a href="#inicio" class="nav-logo" aria-label="Elena & Co. Inicio">Elena &amp; Co.</a>
+        <ul class="nav-links" role="list">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#proceso" class="nav-link">Proceso</a></li>
+          <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="#contacto" class="btn btn-blush nav-cta" aria-label="Agenda tu llamada gratuita">Agenda tu llamada</a>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <button class="mobile-close" id="mobileClose" aria-label="Cerrar menú">&times;</button>
+      <ul role="list">
+        <li><a href="#inicio" class="mobile-link">Inicio</a></li>
+        <li><a href="#servicios" class="mobile-link">Servicios</a></li>
+        <li><a href="#proceso" class="mobile-link">Proceso</a></li>
+        <li><a href="#testimonios" class="mobile-link">Testimonios</a></li>
+        <li><a href="#contacto" class="mobile-link">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="btn btn-blush mobile-cta">Agenda tu llamada</a>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="inicio" aria-label="Sección principal">
+        <div class="hero-left">
+          <div class="hero-text-wrap">
+            <p class="hero-eyebrow">Bienvenida a</p>
+            <h1 class="hero-title">
+              <span class="hero-line-1">
+                <span class="word">Tu</span>
+                <span class="word">boda</span>
+                <span class="word">perfecta,</span>
+              </span>
+              <span class="hero-line-2 script-accent">sin el estrés</span>
+            </h1>
+            <p class="hero-sub">Somos tu equipo de planificación de bodas de lujo. Nos encargamos de cada detalle para que tú solo tengas que disfrutar.</p>
+            <div class="hero-ctas">
+              <a href="#contacto" class="btn btn-blush btn-lg" aria-label="Agenda una consulta gratuita">Agenda una consulta gratuita</a>
+              <a href="#galeria" class="btn btn-ghost" aria-label="Ver nuestro trabajo">Ver nuestro trabajo</a>
+            </div>
+            <div class="hero-proof">
+              <div class="avatar-stack" aria-hidden="true">
+                <div class="avatar" style="background:#C9A89A"></div>
+                <div class="avatar" style="background:#C4A882"></div>
+                <div class="avatar" style="background:#7A6458"></div>
+                <div class="avatar" style="background:#C9A89A;opacity:.7"></div>
+              </div>
+              <div class="hero-proof-text">
+                <div class="stars" aria-label="5 estrellas">★★★★★</div>
+                <span>Más de <strong>150 bodas</strong> planificadas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="hero-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900"
+              alt="Novia elegante en su día de bodas"
+              class="hero-img"
+            />
+            <div class="hero-img-overlay"></div>
+          </div>
+          <div class="hero-float-badge">
+            <span class="badge-num">8+</span>
+            <span class="badge-label">años de<br/>experiencia</span>
+          </div>
+        </div>
+        <div class="hero-gold-line" aria-hidden="true"></div>
+        <div class="deco-circle deco-circle--1" aria-hidden="true"></div>
+        <div class="deco-circle deco-circle--2" aria-hidden="true"></div>
+      </section>
+
+      <!-- TRUST BAR -->
+      <section class="trust-bar" aria-label="Publicaciones destacadas">
+        <div class="trust-bar-inner">
+          <span class="trust-label">Apareció en:</span>
+          <div class="ticker-wrap" aria-hidden="true">
+            <div class="ticker" id="ticker">
+              <span>Vogue Bodas</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>Brides Magazine</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>The Knot</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>Martha Stewart Weddings</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>Harper's Bazaar</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>Vogue Bodas</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>Brides Magazine</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>The Knot</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>Martha Stewart Weddings</span><span class="dot">&nbsp;·&nbsp;</span>
+              <span>Harper's Bazaar</span><span class="dot">&nbsp;·&nbsp;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROBLEM SECTION -->
+      <section class="problem-section" aria-label="El reto de planificar una boda">
+        <div class="container problem-grid">
+          <div class="problem-left">
+            <h2 class="section-heading">Organizar una boda es hermoso<br/>— <em>y también, abrumador.</em></h2>
+            <div class="pain-cards">
+              <div class="pain-card">
+                <div class="pain-num">78%</div>
+                <p>de las parejas reporta estrés extremo durante la planificación de su boda.</p>
+              </div>
+              <div class="pain-card">
+                <div class="pain-num">20+</div>
+                <p>proveedores distintos que coordinar sin la guía de un profesional.</p>
+              </div>
+              <div class="pain-card">
+                <div class="pain-icon" aria-hidden="true">
+                  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                </div>
+                <p>Perder momentos únicos por estar preocupado por los detalles del evento.</p>
+              </div>
+            </div>
+            <p class="problem-close">Nosotros existimos para que eso <em>no le pase a ti.</em></p>
+          </div>
+          <div class="problem-right" aria-hidden="true">
+            <div class="problem-bg-text">150+</div>
+            <div class="problem-stat-block">
+              <p class="stat-big">150<span>+</span></p>
+              <p class="stat-sub">parejas que ya<br/>disfrutan sin estrés</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about-section" aria-label="Sobre Elena y Co.">
+        <div class="container about-grid">
+          <div class="about-images" aria-hidden="true">
+            <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600" alt="Detalle floral de boda elegante" class="about-img about-img--main" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=400" alt="Pareja en su boda" class="about-img about-img--secondary" loading="lazy" />
+            <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=400" alt="Decoración de mesa de boda" class="about-img about-img--tertiary" loading="lazy" />
+            <div class="about-img-badge">Diseño con alma</div>
+          </div>
+          <div class="about-text">
+            <p class="eyebrow-script">nuestra historia</p>
+            <h2 class="section-heading">Somos Elena &amp; Co.<br/><em>Tu aliado en cada paso del camino.</em></h2>
+            <p class="body-text">Con más de 8 años de experiencia y 150+ bodas diseñadas, creamos experiencias únicas e irrepetibles. Desde la primera reunión hasta el último vals, estamos contigo.</p>
+            <ul class="about-features" role="list">
+              <li class="about-feature">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2M12 12v4M10 14h4"/></svg>
+                <div><strong>Planificación completa</strong><span>Desde la primera idea hasta el último detalle</span></div>
+              </li>
+              <li class="about-feature">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <div><strong>Diseño personalizado</strong><span>Una estética única que refleja quiénes son</span></div>
+              </li>
+              <li class="about-feature">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+                <div><strong>Red de proveedores premium</strong><span>200+ aliados cuidadosamente seleccionados</span></div>
+              </li>
+            </ul>
+            <a href="#proceso" class="btn btn-ghost" aria-label="Conoce nuestra historia">Conoce nuestra historia</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="services-section" id="servicios" aria-label="Nuestros servicios">
+        <div class="container">
+          <div class="section-title-wrap">
+            <p class="eyebrow-script">nuestros</p>
+            <h2 class="section-heading-xl">Servicios</h2>
+          </div>
+          <div class="services-grid">
+            <article class="service-card">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500" alt="Coordinación total de boda" class="service-card-img" loading="lazy" />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <h3 class="service-card-title">Coordinación Total</h3>
+                <p class="service-card-desc">La experiencia completa de principio a fin.</p>
+                <a href="#contacto" class="btn btn-ghost-white">Ver más</a>
+              </div>
+            </article>
+            <article class="service-card">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600" alt="Diseño y estilismo de boda" class="service-card-img" loading="lazy" />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <h3 class="service-card-title">Diseño &amp; Estilismo</h3>
+                <p class="service-card-desc">Cada detalle visual de tu boda, curado con amor.</p>
+                <a href="#contacto" class="btn btn-ghost-white">Ver más</a>
+              </div>
+            </article>
+            <article class="service-card">
+              <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=500" alt="Coordinación el día de la boda" class="service-card-img" loading="lazy" />
+              <div class="service-card-overlay"></div>
+              <div class="service-card-content">
+                <h3 class="service-card-title">Coordinación el Día D</h3>
+                <p class="service-card-desc">Tú disfrutas. Nosotros nos encargamos.</p>
+                <a href="#contacto" class="btn btn-ghost-white">Ver más</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="process-section" id="proceso" aria-label="Nuestro proceso">
+        <div class="container">
+          <div class="section-title-wrap">
+            <p class="eyebrow-script">cómo funciona</p>
+            <h2 class="section-heading-xl">El Proceso</h2>
+          </div>
+          <div class="process-timeline">
+            <div class="process-line" aria-hidden="true"></div>
+            <div class="process-step">
+              <div class="step-bg-num" aria-hidden="true">01</div>
+              <div class="step-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 9.81 19.79 19.79 0 011 1.18 2 2 0 012.96 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <h3 class="step-title">Llamada de descubrimiento</h3>
+              <p class="step-desc">Nos conocemos y entendemos tu visión</p>
+              <span class="step-note">30 min gratuitos</span>
+            </div>
+            <div class="process-step">
+              <div class="step-bg-num" aria-hidden="true">02</div>
+              <div class="step-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              </div>
+              <h3 class="step-title">Propuesta personalizada</h3>
+              <p class="step-desc">Diseñamos un plan a medida con proveedores y presupuesto</p>
+              <span class="step-note">A tu medida</span>
+            </div>
+            <div class="process-step">
+              <div class="step-bg-num" aria-hidden="true">03</div>
+              <div class="step-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="1.5" stroke-linecap="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+              </div>
+              <h3 class="step-title">¡Tu boda perfecta!</h3>
+              <p class="step-desc">Ejecutamos cada detalle. Tú solo apareces y brillas.</p>
+              <span class="step-note">Tú solo disfrutas</span>
+            </div>
+          </div>
+          <div class="process-cta">
+            <a href="#contacto" class="btn btn-blush btn-lg" aria-label="Empieza aquí, es gratis">Empieza aquí — es gratis</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-section" aria-label="Nuestras estadísticas">
+        <div class="stats-gold-line" aria-hidden="true"></div>
+        <div class="container stats-grid">
+          <div class="stat-item">
+            <p class="stat-number" data-target="150" data-suffix="+">0</p>
+            <p class="stat-label">Bodas planificadas</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number" data-target="8" data-suffix="+">0</p>
+            <p class="stat-label">Años de experiencia</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number" data-target="98" data-suffix="%">0</p>
+            <p class="stat-label">Clientes satisfechos</p>
+          </div>
+          <div class="stat-item">
+            <p class="stat-number" data-target="200" data-suffix="+">0</p>
+            <p class="stat-label">Proveedores en nuestra red</p>
+          </div>
+        </div>
+        <div class="stats-gold-line" aria-hidden="true"></div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="testimonials-section" id="testimonios" aria-label="Testimonios">
+        <div class="container">
+          <div class="section-title-wrap">
+            <h2 class="section-heading-xl">Lo que dicen nuestras parejas</h2>
+          </div>
+          <div class="testimonials-grid">
+            <blockquote class="testimonial-card">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-text">Elena y su equipo convirtieron nuestro sueño en realidad. Cada detalle fue perfecto y nosotros simplemente disfrutamos. ¡La mejor decisión que tomamos!</p>
+              <footer class="testimonial-footer">
+                <div class="testimonial-avatar" aria-hidden="true" style="background:#C9A89A"></div>
+                <div>
+                  <cite class="testimonial-name">Sofía &amp; Mateo</cite>
+                  <span class="testimonial-location">Lima, 2024</span>
+                  <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-text">Estábamos completamente perdidos al principio. En tres semanas teníamos todo organizado. El nivel de profesionalismo y cariño es incomparable.</p>
+              <footer class="testimonial-footer">
+                <div class="testimonial-avatar" aria-hidden="true" style="background:#C4A882"></div>
+                <div>
+                  <cite class="testimonial-name">Valentina &amp; Andrés</cite>
+                  <span class="testimonial-location">Cusco, 2024</span>
+                  <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+                </div>
+              </footer>
+            </blockquote>
+            <blockquote class="testimonial-card">
+              <div class="quote-mark" aria-hidden="true">"</div>
+              <p class="testimonial-text">No solo planificaron nuestra boda — crearon una experiencia mágica que todavía recordamos cada día.</p>
+              <footer class="testimonial-footer">
+                <div class="testimonial-avatar" aria-hidden="true" style="background:#7A6458"></div>
+                <div>
+                  <cite class="testimonial-name">Isabella &amp; Carlos</cite>
+                  <span class="testimonial-location">Paracas, 2023</span>
+                  <div class="testimonial-stars" aria-label="5 estrellas">★★★★★</div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="gallery-section" id="galeria" aria-label="Galería de bodas">
+        <div class="container">
+          <div class="section-title-wrap">
+            <h2 class="section-heading-xl">Bodas que hemos creado</h2>
+          </div>
+          <div class="gallery-grid">
+            <div class="g-item g-tall">
+              <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=500" alt="Sofía y Mateo — Lima 2024" loading="lazy" />
+              <div class="g-overlay"><span>Sofía &amp; Mateo</span></div>
+            </div>
+            <div class="g-item">
+              <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=500" alt="Valentina y Andrés — Cusco 2024" loading="lazy" />
+              <div class="g-overlay"><span>Valentina &amp; Andrés</span></div>
+            </div>
+            <div class="g-item">
+              <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=700" alt="Isabella y Carlos — Paracas 2023" loading="lazy" />
+              <div class="g-overlay"><span>Isabella &amp; Carlos</span></div>
+            </div>
+            <div class="g-item g-tall">
+              <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=500" alt="María y Rodrigo — Lima 2024" loading="lazy" />
+              <div class="g-overlay"><span>María &amp; Rodrigo</span></div>
+            </div>
+            <div class="g-item">
+              <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=500" alt="Camila y Diego — Cusco 2023" loading="lazy" />
+              <div class="g-overlay"><span>Camila &amp; Diego</span></div>
+            </div>
+            <div class="g-item">
+              <img src="https://images.unsplash.com/photo-1550005809-91ad75fb315f?w=500" alt="Andrea y Sebastián — Paracas 2024" loading="lazy" />
+              <div class="g-overlay"><span>Andrea &amp; Sebastián</span></div>
+            </div>
+          </div>
+          <div class="gallery-cta">
+            <a href="#contacto" class="btn btn-ghost" aria-label="Ver galería completa">Ver galería completa</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT FORM -->
+      <section class="contact-section" id="contacto" aria-label="Formulario de contacto">
+        <div class="contact-grid">
+          <div class="contact-image-side">
+            <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=900" alt="Boda de ensueño" class="contact-img" loading="lazy" />
+            <div class="contact-img-overlay"></div>
+            <p class="contact-script-text">Empieza tu historia</p>
+          </div>
+          <div class="contact-form-side">
+            <div class="contact-form-card">
+              <p class="eyebrow-script">primera consulta gratuita</p>
+              <h2 class="form-heading">Cuéntanos sobre<br/><em class="script-accent-inline">tu boda</em></h2>
+
+              <form id="contactForm" class="contact-form" novalidate aria-label="Formulario de consulta gratuita">
+                <div class="form-group">
+                  <label for="nombres" class="form-label">Nombre(s) de la pareja</label>
+                  <input type="text" id="nombres" name="nombres" class="form-input" placeholder="Ej: Sofía &amp; Mateo" required aria-required="true" />
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="fecha" class="form-label">Fecha aproximada de la boda</label>
+                  <input type="date" id="fecha" name="fecha" class="form-input" required aria-required="true" />
+                  <span class="form-error" role="alert"></span>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="invitados" class="form-label">Número de invitados</label>
+                    <select id="invitados" name="invitados" class="form-input form-select" required aria-required="true">
+                      <option value="" disabled selected>Selecciona</option>
+                      <option value="menos50">Menos de 50</option>
+                      <option value="50-100">50 – 100</option>
+                      <option value="100-200">100 – 200</option>
+                      <option value="mas200">Más de 200</option>
+                    </select>
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="ciudad" class="form-label">Ciudad o lugar</label>
+                    <input type="text" id="ciudad" name="ciudad" class="form-input" placeholder="Ej: Lima, Cusco..." required aria-required="true" />
+                    <span class="form-error" role="alert"></span>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="fuente" class="form-label">¿Cómo nos encontraste?</label>
+                  <select id="fuente" name="fuente" class="form-input form-select">
+                    <option value="" disabled selected>Selecciona una opción</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="google">Google</option>
+                    <option value="recomendacion">Recomendación</option>
+                    <option value="revista">Revista / Blog</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="mensaje" class="form-label">Cuéntanos tu visión</label>
+                  <textarea id="mensaje" name="mensaje" class="form-input form-textarea" placeholder="Describe el estilo de boda que sueñas, el ambiente, colores, momentos especiales..." rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-blush btn-submit" aria-label="Solicitar consulta gratuita">
+                  Solicitar consulta gratuita
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </button>
+              </form>
+
+              <div class="form-success" id="formSuccess" aria-live="polite" hidden>
+                <div class="success-icon" aria-hidden="true">
+                  <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#C9A89A" stroke-width="1.5" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                </div>
+                <h3>¡Gracias! Tu mensaje fue enviado.</h3>
+                <p>Nos pondremos en contacto contigo en menos de 24 horas. ¡Estamos emocionados de conocer tu historia!</p>
+              </div>
+
+              <ul class="trust-signals" role="list" aria-label="Garantías de confianza">
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="2" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                  Información privada y segura
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                  Respuesta en menos de 24h
+                </li>
+                <li>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#C4A882" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+                  Primera consulta sin costo
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="final-cta-section" aria-label="Llamada a la acción final">
+        <div class="noise-overlay" aria-hidden="true"></div>
+        <div class="container final-cta-inner">
+          <h2 class="final-cta-heading">Tu historia de amor<br/>merece ser perfecta.</h2>
+          <p class="final-cta-script">Empieza a planificarla hoy.</p>
+          <a href="#contacto" class="btn btn-blush btn-lg btn-pulse" aria-label="Reserva tu consulta gratuita">Reserva tu consulta gratuita</a>
+          <p class="final-cta-footnote">Sin compromisos. Sin costos ocultos. Solo tu boda ideal.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="footer-gold-line" aria-hidden="true"></div>
+      <div class="container footer-grid">
+        <div class="footer-col footer-brand">
+          <p class="footer-logo">Elena &amp; Co.</p>
+          <p class="footer-tagline">Creamos bodas que se recuerdan toda la vida.</p>
+          <div class="footer-socials" aria-label="Redes sociales">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5" fill="currentColor" stroke="none"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.16 1.22-5.16s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0 1.34.67 1.34 1.48 0 .9-.58 2.26-.87 3.51-.25 1.04.52 1.89 1.53 1.89 1.84 0 3.08-2.37 3.08-5.18 0-2.14-1.44-3.74-4.05-3.74-2.95 0-4.77 2.2-4.77 4.64 0 .84.24 1.43.62 1.89.17.2.19.29.13.52-.04.17-.14.57-.18.73-.06.24-.24.33-.44.24-1.25-.51-1.83-1.89-1.83-3.44 0-2.55 2.15-5.62 6.42-5.62 3.44 0 5.71 2.49 5.71 5.17 0 3.54-1.96 6.18-4.84 6.18-.97 0-1.88-.52-2.19-1.11l-.62 2.38c-.22.86-.82 1.94-1.24 2.6.93.28 1.91.43 2.93.43 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="YouTube">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58 2.78 2.78 0 001.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.96A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navegación</h4>
+          <ul role="list">
+            <li><a href="#inicio" class="footer-link">Inicio</a></li>
+            <li><a href="#servicios" class="footer-link">Servicios</a></li>
+            <li><a href="#proceso" class="footer-link">Proceso</a></li>
+            <li><a href="#testimonios" class="footer-link">Testimonios</a></li>
+            <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Servicios</h4>
+          <ul role="list">
+            <li><a href="#servicios" class="footer-link">Coordinación Total</a></li>
+            <li><a href="#servicios" class="footer-link">Diseño &amp; Estilismo</a></li>
+            <li><a href="#servicios" class="footer-link">Coordinación el Día D</a></li>
+            <li><a href="#contacto" class="footer-link">Consulta Gratuita</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 class="footer-col-title">Contacto</h4>
+          <ul role="list">
+            <li><a href="mailto:hola@elenayco.com" class="footer-link">hola@elenayco.com</a></li>
+            <li><a href="tel:+51999999999" class="footer-link">+51 999 999 999</a></li>
+            <li class="footer-text">Lima, Perú</li>
+            <li class="footer-text">Disponible en todo el país</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2025 Elena &amp; Co. Todos los derechos reservados.</p>
+          <div class="footer-legal">
+            <a href="#" class="footer-link-sm">Política de Privacidad</a>
+            <span aria-hidden="true">·</span>
+            <a href="#" class="footer-link-sm">Términos</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
