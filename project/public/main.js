@@ -467,4 +467,3 @@ form.addEventListener('submit', (e) => {
     }
   });
 });
-
