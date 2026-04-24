@@ -9,15 +9,20 @@ gsap.registerPlugin(ScrollTrigger);
 const cursor = document.getElementById('cursor');
 const cursorFollower = document.getElementById('cursorFollower');
 
+console.log('Cursor elements found:', cursor, cursorFollower);
+console.log('GSAP available:', typeof gsap);
+
 if (cursor && cursorFollower) {
   // Verificar que GSAP esté disponible
   if (typeof gsap !== 'undefined') {
+    console.log('Initializing cursor animations');
     const xCursor = gsap.quickTo(cursor, 'x', { duration: 0.1 });
     const yCursor = gsap.quickTo(cursor, 'y', { duration: 0.1 });
     const xFollower = gsap.quickTo(cursorFollower, 'x', { duration: 0.45, ease: 'power3' });
     const yFollower = gsap.quickTo(cursorFollower, 'y', { duration: 0.45, ease: 'power3' });
 
     window.addEventListener('mousemove', (e) => {
+      console.log('Mouse move event:', e.clientX, e.clientY);
       xCursor(e.clientX);
       yCursor(e.clientY);
       xFollower(e.clientX);
@@ -34,7 +39,11 @@ if (cursor && cursorFollower) {
         gsap.to(cursor, { scale: 1, duration: .2 });
       });
     });
+  } else {
+    console.error('GSAP not available');
   }
+} else {
+  console.error('Cursor elements not found');
 }
 
 /* ─── NAVBAR SCROLL ──────────────────────────────────── */
